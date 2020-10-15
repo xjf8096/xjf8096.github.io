@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head>
-  <meta charset="utf-8">
-  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  
-  <title>xjf的前端总结</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
   <meta property="og:type" content="website">
 <meta property="og:title" content="xjf的前端总结">
 <meta property="og:url" content="http://example.com/index.html">
@@ -14,224 +27,748 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="xjf8096">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="xjf的前端总结" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">xjf的前端总结</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-测试博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/15/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2020-10-15T05:37:58.000Z" itemprop="datePublished">2020-10-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/15/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/">测试博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2020/10/15/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/kui.jpg" alt="阿葵"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/15/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/" data-id="ckgaep5yz0001otv3bt3v5b3r" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+<link rel="canonical" href="http://example.com/">
 
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/15/hello-world/" class="article-date">
-  <time datetime="2020-10-15T05:36:22.500Z" itemprop="datePublished">2020-10-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/15/hello-world/">Hello World</a>
-    </h1>
-  
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-cn'
+  };
+</script>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/15/hello-world/" data-id="ckgaep5y70000otv32709h9lt" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
+  <title>xjf的前端总结</title>
   
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
 
-  
-    
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li></ul>
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
+  <div class="site-meta">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/10/15/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/">测试博客</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/15/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">xjf的前端总结</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
   </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 xjf8096<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
   </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
 </nav>
+
+
+
+
+</div>
+    </header>
+
     
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
   </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/08/20/CSS-%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xjf8096">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xjf的前端总结">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/08/20/CSS-%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" class="post-title-link" itemprop="url">CSS-如何让一个元素水平垂直居中</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-08-20 14:16:21" itemprop="dateCreated datePublished" datetime="2018-08-20T14:16:21+08:00">2018-08-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>方式一：绝对定位 + margin（需要指定子元素的宽高，不推荐）<br>方式二：绝对定位 + translate（无需指定子元素的宽高，推荐）<br>方式3：flex 布局（待改进）<br>方式4： flex 布局 + margin: auto（推荐）<br><a target="_blank" rel="noopener" href="https://github.com/qianguyihao/Web/blob/master/03-CSS%E8%BF%9B%E9%98%B6/04-%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%EF%BC%9F.md#%E5%89%8D%E8%A8%80">https://github.com/qianguyihao/Web/blob/master/03-CSS%E8%BF%9B%E9%98%B6/04-%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%EF%BC%9F.md#前言</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/08/11/CSS-CSS%E5%B8%83%E5%B1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xjf8096">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xjf的前端总结">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/08/11/CSS-CSS%E5%B8%83%E5%B1%80/" class="post-title-link" itemprop="url">CSS-CSS布局</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-08-11 14:15:10" itemprop="dateCreated datePublished" datetime="2018-08-11T14:15:10+08:00">2018-08-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>常见的布局属性<br>（1）display 确定元素的显示类型：</p>
+<p>block：块级元素。</p>
+<p>inline：行内元素。</p>
+<p>inline-block：对外的表现是行内元素（不会独占一行），对内的表现是块级元素（可以设置宽高）。</p>
+<p>（2）position 确定元素的位置：</p>
+<p>static：默认属性值。</p>
+<p>relative：相对定位。相对于元素本身进行偏移，不会改变它所占据的空间。</p>
+<p>absolute：绝对定位。相对于父元素中最近的 relative/absolute 进行偏移，会脱离文档流。音标：[ˈæbsəluːt]。</p>
+<p>fixed：固定定位。相对于可视区域固定，会脱离文档流。</p>
+<p>relative、absolute、fixed这三个属性，可以结合 z-index 来设置层级。</p>
+<p>常见的布局方法<br>1、table 表格布局：早期使用的布局，如今用得很少。</p>
+<p>2、float 浮动 + margin：为了兼容低版本的IE浏览器，很多网站（比如腾讯新闻、网易新闻、淘宝等）都会采用 float 布局。</p>
+<p>3、inline-block 布局：对外的表现是行内元素（不会独占一行），对内的表现是块级元素（可以设置宽高）。</p>
+<p>4、flex 布局：为布局而生，非常灵活，是最为推荐的布局写法。<br><a target="_blank" rel="noopener" href="https://github.com/qianguyihao/Web/blob/master/03-CSS%E8%BF%9B%E9%98%B6/02-CSS%E5%B8%83%E5%B1%80.md#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E5%B1%9E%E6%80%A7">https://github.com/qianguyihao/Web/blob/master/03-CSS%E8%BF%9B%E9%98%B6/02-CSS%E5%B8%83%E5%B1%80.md#常见的布局属性</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/07/20/CSS-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xjf8096">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xjf的前端总结">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/07/20/CSS-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" class="post-title-link" itemprop="url">CSS-盒子模型</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-07-20 14:13:31" itemprop="dateCreated datePublished" datetime="2018-07-20T14:13:31+08:00">2018-07-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>盒子模型<br>前言<br>盒子模型，英文即box model。无论是div、span、还是a都是盒子。</p>
+<p>但是，图片、表单元素一律看作是文本，它们并不是盒子。这个很好理解，比如说，一张图片里并不能放东西，它自己就是自己的内容。</p>
+<p>盒子中的区域<br>一个盒子中主要的属性就5个：width、height、padding、border、margin。如下：</p>
+<p>width和height：内容的宽度、高度（不是盒子的宽度、高度）。<br>padding：内边距。<br>border：边框。<br>margin：外边距。<br><a target="_blank" rel="noopener" href="https://github.com/qianguyihao/Web/blob/master/02-CSS%E5%9F%BA%E7%A1%80/06-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3.md#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">https://github.com/qianguyihao/Web/blob/master/02-CSS%E5%9F%BA%E7%A1%80/06-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3.md#盒子模型</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/07/18/CSS-CSS%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A%E4%BC%AA%E7%B1%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xjf8096">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xjf的前端总结">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/07/18/CSS-CSS%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A%E4%BC%AA%E7%B1%BB/" class="post-title-link" itemprop="url">CSS-CSS选择器：伪类</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-07-18 14:11:51" itemprop="dateCreated datePublished" datetime="2018-07-18T14:11:51+08:00">2018-07-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://github.com/qianguyihao/Web/blob/master/02-CSS%E5%9F%BA%E7%A1%80/04-CSS%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A%E4%BC%AA%E7%B1%BB.md#%E4%BC%AA%E7%B1%BB%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8">https://github.com/qianguyihao/Web/blob/master/02-CSS%E5%9F%BA%E7%A1%80/04-CSS%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A%E4%BC%AA%E7%B1%BB.md#伪类伪类选择器</a><br>伪类（伪类选择器）<br>伪类：同一个标签，根据其不同的种状态，有不同的样式。这就叫做“伪类”。伪类用冒号来表示。</p>
+<p>比如div是属于box类，这一点很明确，就是属于box类。但是a属于什么类？不明确。因为需要看用户点击前是什么状态，点击后是什么状态。所以，就叫做“伪类”。</p>
+<p>静态伪类和动态伪类<br>伪类选择器分为两种。</p>
+<p>（1）静态伪类：只能用于超链接的样式。如下：</p>
+<p>:link 超链接点击之前<br>:visited 链接被访问过之后<br>PS：以上两种样式，只能用于超链接。</p>
+<p>（2）动态伪类：针对所有标签都适用的样式。如下：</p>
+<p>:hover “悬停”：鼠标放到标签上的时候<br>:active “激活”： 鼠标点击标签，但是不松手时。<br>:focus 是某个标签获得焦点时的样式（比如某个输入框获得焦点）<br>超链接a标签<br>超链接的四种状态<br>a标签有4种伪类（即对应四种状态），要求背诵。如下：</p>
+<p>:link “链接”：超链接点击之前<br>:visited “访问过的”：链接被访问过之后<br>:hover “悬停”：鼠标放到标签上的时候<br>:active “激活”： 鼠标点击标签，但是不松手时。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/07/10/CSS-CSS%E6%A0%B7%E5%BC%8F%E8%A1%A8%E5%92%8C%E9%80%89%E6%8B%A9%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xjf8096">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xjf的前端总结">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/07/10/CSS-CSS%E6%A0%B7%E5%BC%8F%E8%A1%A8%E5%92%8C%E9%80%89%E6%8B%A9%E5%99%A8/" class="post-title-link" itemprop="url">CSS-CSS样式表和选择器</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-07-10 14:10:43" itemprop="dateCreated datePublished" datetime="2018-07-10T14:10:43+08:00">2018-07-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://github.com/qianguyihao/Web/blob/master/02-CSS%E5%9F%BA%E7%A1%80/03-CSS%E6%A0%B7%E5%BC%8F%E8%A1%A8%E5%92%8C%E9%80%89%E6%8B%A9%E5%99%A8.md#%E6%9C%AC%E6%96%87%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9">https://github.com/qianguyihao/Web/blob/master/02-CSS%E5%9F%BA%E7%A1%80/03-CSS%E6%A0%B7%E5%BC%8F%E8%A1%A8%E5%92%8C%E9%80%89%E6%8B%A9%E5%99%A8.md#本文主要内容</a><br>本文主要内容<br>CSS 概述<br>CSS 和 HTML 结合的三种方式：行内样式表、内嵌样式表、外部样式表<br>CSS 四种基本选择器：标签选择器、类选择器、ID选择器、通用选择器<br>CSS 几种扩展选择器：后代选择器、交集选择器、并集选择器<br>CSS 样式优先级<br>前言<br>CSS 概述<br>CSS：Cascading Style Sheet，层叠样式表。CSS 的作用就是给 HTML 页面标签添加各种样式，定义网页的显示效果。简单一句话：CSS 将网页内容和显示样式进行分离，提高了显示功能。</p>
+<p>css 的最新版本是 css3，我们目前学习的是 css2.1。 因为 css3 和 css2.1 不矛盾，必须先学 2.1 然后学 3。</p>
+<p>接下来我们要讲一下为什么要使用 CSS。</p>
+<p>HTML 的缺陷：</p>
+<p>不能够适应多种设备<br>要求浏览器必须智能化足够庞大<br>数据和显示没有分开<br>功能不够强大<br>CSS 优点：</p>
+<p>使数据和显示分开<br>降低网络流量<br>使整个网站视觉效果一致<br>使开发效率提高了（耦合性降低，一个人负责写 html，一个人负责写 css）<br>比如说，有一个样式需要在一百个页面上显示，如果是 html 来实现，那要写一百遍，现在有了 css，只要写一遍。现在，html 只提供数据和一些控件，完全交给 css 提供各种各样的样式。</p>
+<p>CSS 的重点知识点<br>盒子模型、浮动、定位</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/06/18/html-%E5%88%9D%E8%AF%86HTML/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xjf8096">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xjf的前端总结">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/06/18/html-%E5%88%9D%E8%AF%86HTML/" class="post-title-link" itemprop="url">html-初识HTML</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-06-18 14:08:21" itemprop="dateCreated datePublished" datetime="2018-06-18T14:08:21+08:00">2018-06-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://github.com/qianguyihao/Web/blob/master/01-HTML/03-%E5%88%9D%E8%AF%86HTML.md#%E7%BC%96%E8%BE%91%E5%99%A8%E7%9B%B8%E5%85%B3">https://github.com/qianguyihao/Web/blob/master/01-HTML/03-%E5%88%9D%E8%AF%86HTML.md#编辑器相关</a><br>编辑器相关<br>前端开发的编辑器软件，我首先推荐 VS Code，其次推荐Sublime Text。</p>
+<p>有人说 WebStorm 也不错？但真实情况是，自从VS Code 问世之后，用 WebStorm 的人越来越少了。</p>
+<p>PS：文件的后缀名不能决定文件格式，只能决定打开文件打开的方式。</p>
+<p>VS Code 的使用<br>详情请移步至：第一次使用VS Code时你应该知道的一切配置</p>
+<p>Sublime Text 的使用<br>详情请移步至：Sublime Text使用技巧</p>
+<p>HTML的概述<br>HTML的概念<br>HTML 全称为 HyperText Markup Language，译为超文本标记语言。</p>
+<p>HTML 不是一种编程语言，是一种描述性的标记语言。</p>
+<p>作用：HTML是负责描述文档语义的语言。</p>
+<p>概念：超文本<br>所谓的超文本，有两层含义：</p>
+<p>（1）图片、音频、视频、动画、多媒体等内容，成为超文本，因为它们超出了文本的限制。</p>
+<p>（2）不仅如此，它还可以从一个文件跳转到另一个文件，与世界各地主机的文件进行连接。即：超级链接文本。</p>
+<p>概念：标记语言<br>HTML 不是一种编程语言，是一种描述性的标记语言。这主要有两层含义：</p>
+<p>（1）标记语言是一套标记标签。比如：标签<a>表示超链接、标签<img>表示图片、标签<h1>表示一级标题等等，它们都是属于 HTML 标签。</h1></a></p>
+<p>说的通俗一点就是：网页是由网页元素组成的，这些元素是由 HTML 标签描述出来，然后通过浏览器解析，就可以显示给用户看了。</p>
+<p>（2）编程语言是有编译过程的，而标记语言没有编译过程，HTML标签是直接由浏览器解析执行。</p>
+<p>HTML是负责描述文档语义的语言<br>HTML 格式的文件是一个纯本文文件（就是用txt文件改名而成），用一些标签来描述语义，这些标签在浏览器页面上是无法直观看到的，所以称之为“超文本标记语言”。</p>
+<p>接下来，我们需要学习 HTML 中的很多“标签对儿”，这些“标签对儿”能够给文本不同的语义。</p>
+<p>比如，面试的时候问你，</p><h1> 标签有什么作用？<p></p>
+<p>正确答案：给文本增加主标题的语义。<br>错误答案：给文字加粗、加黑、变大。<br>关乎“语义”的更深刻理解，等接下来我们学习了各种标签，就明白了</p>
+</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/06/15/html-%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xjf8096">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xjf的前端总结">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/06/15/html-%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">html基础</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-06-15 13:58:46" itemprop="dateCreated datePublished" datetime="2018-06-15T13:58:46+08:00">2018-06-15</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Web<br>Web（World Wide Web）即全球广域网，也称为万维网。</p>
+<p>我们常说的Web端就是网页端。</p>
+<p>网页<br>网页是构成网站的基本元素。网页主要由文字、图像和超链接等元素构成。当然，除了这些元素，网页中还可以包含音频、视频以及Flash等。</p>
+<p>我们在浏览器上输入网址后，打开的任何一个页面，都是属于网页。</p>
+<p>浏览器<br>浏览器是网页运行的平台，常见的浏览器有谷歌（Chrome）、Safari、火狐（Firefox）、IE、Edge、Opera等。</p>
+<p>关于浏览器的详细介绍，可以看下一篇文章：《浏览器的介绍》</p>
+<p>Web标准<br>W3C组织<br>W3C：万维网联盟组织，用来制定web标准的机构（组织）。</p>
+<p>W3C 万维网联盟是国际最著名的标准化组织。1994年成立后，至今已发布近百项相关万维网的标准，对万维网发展做出了杰出的贡献。</p>
+<p>W3C 组织就类似于现实世界中的联合国。</p>
+<p>为什么要遵循WEB标准呢？因为很多浏览器的浏览器内核不同，导致页面解析出来的效果可能会有差异，给开发者增加无谓的工作量。因此需要指定统一的标准。</p>
+<p>Web 标准<br>Web标准：制作网页要遵循的规范。</p>
+<p>Web标准不是某一个标准，而是由W3C组织和其他标准化组织制定的一系列标准的集合。</p>
+<p>1、Web标准包括三个方面：</p>
+<p>结构标准（HTML）：用于对网页元素进行整理和分类。</p>
+<p>表现标准（CSS）：用于设置网页元素的版式、颜色、大小等外观样式。</p>
+<p>行为标准（JS）：用于定义网页的交互和行为。</p>
+<p>根据上面的Web标准，可以将 Web前端分为三层，如下。</p>
+<p>2、Web前端分三层：</p>
+<p>HTML（HyperText Markup Language）：超文本标记语言。从语义的角度描述页面的结构。相当于人的身体组织结构。<br>CSS（Cascading Style Sheets）：层叠样式表。从审美的角度美化页面的样式。相当于人的衣服和打扮。<br>JS：JavaScript。从交互的角度描述页面的行为。相当于人的动作，让人有生命力。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">xjf8096</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xjf8096</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
 </body>
 </html>

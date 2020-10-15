@@ -20,15 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="xjf的前端总结">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="盒子模型前言盒子模型，英文即box model。无论是div、span、还是a都是盒子。 但是，图片、表单元素一律看作是文本，它们并不是盒子。这个很好理解，比如说，一张图片里并不能放东西，它自己就是自己的内容。 盒子中的区域一个盒子中主要的属性就5个：width、height、padding、border、margin。如下： width和height：内容的宽度、高度（不是盒子的宽度、高度）。p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS-盒子模型">
+<meta property="og:url" content="http://example.com/2018/07/20/CSS-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="xjf的前端总结">
+<meta property="og:description" content="盒子模型前言盒子模型，英文即box model。无论是div、span、还是a都是盒子。 但是，图片、表单元素一律看作是文本，它们并不是盒子。这个很好理解，比如说，一张图片里并不能放东西，它自己就是自己的内容。 盒子中的区域一个盒子中主要的属性就5个：width、height、padding、border、margin。如下： width和height：内容的宽度、高度（不是盒子的宽度、高度）。p">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-07-20T06:13:31.000Z">
+<meta property="article:modified_time" content="2020-10-15T06:14:24.657Z">
 <meta property="article:author" content="xjf8096">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/2018/07/20/CSS-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -36,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-cn'
   };
 </script>
 
-  <title>Archive | xjf的前端总结</title>
+  <title>CSS-盒子模型 | xjf的前端总结</title>
   
 
 
@@ -139,170 +143,82 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 7 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/07/20/CSS-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xjf8096">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xjf的前端总结">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CSS-盒子模型
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-07-20 14:13:31" itemprop="dateCreated datePublished" datetime="2018-07-20T14:13:31+08:00">2018-07-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2018</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-08-20T14:16:21+08:00"
-              content="2018-08-20">
-          08-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2018/08/20/CSS-%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" itemprop="url">
-            <span itemprop="name">CSS-如何让一个元素水平垂直居中</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-08-11T14:15:10+08:00"
-              content="2018-08-11">
-          08-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2018/08/11/CSS-CSS%E5%B8%83%E5%B1%80/" itemprop="url">
-            <span itemprop="name">CSS-CSS布局</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-07-20T14:13:31+08:00"
-              content="2018-07-20">
-          07-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2018/07/20/CSS-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" itemprop="url">
-            <span itemprop="name">CSS-盒子模型</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-07-18T14:11:51+08:00"
-              content="2018-07-18">
-          07-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2018/07/18/CSS-CSS%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A%E4%BC%AA%E7%B1%BB/" itemprop="url">
-            <span itemprop="name">CSS-CSS选择器：伪类</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-07-10T14:10:43+08:00"
-              content="2018-07-10">
-          07-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2018/07/10/CSS-CSS%E6%A0%B7%E5%BC%8F%E8%A1%A8%E5%92%8C%E9%80%89%E6%8B%A9%E5%99%A8/" itemprop="url">
-            <span itemprop="name">CSS-CSS样式表和选择器</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-06-18T14:08:21+08:00"
-              content="2018-06-18">
-          06-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2018/06/18/html-%E5%88%9D%E8%AF%86HTML/" itemprop="url">
-            <span itemprop="name">html-初识HTML</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-06-15T13:58:46+08:00"
-              content="2018-06-15">
-          06-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2018/06/15/html-%E5%9F%BA%E7%A1%80/" itemprop="url">
-            <span itemprop="name">html基础</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <p>盒子模型<br>前言<br>盒子模型，英文即box model。无论是div、span、还是a都是盒子。</p>
+<p>但是，图片、表单元素一律看作是文本，它们并不是盒子。这个很好理解，比如说，一张图片里并不能放东西，它自己就是自己的内容。</p>
+<p>盒子中的区域<br>一个盒子中主要的属性就5个：width、height、padding、border、margin。如下：</p>
+<p>width和height：内容的宽度、高度（不是盒子的宽度、高度）。<br>padding：内边距。<br>border：边框。<br>margin：外边距。<br><a target="_blank" rel="noopener" href="https://github.com/qianguyihao/Web/blob/master/02-CSS%E5%9F%BA%E7%A1%80/06-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3.md#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">https://github.com/qianguyihao/Web/blob/master/02-CSS%E5%9F%BA%E7%A1%80/06-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3.md#盒子模型</a></p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/07/18/CSS-CSS%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A%E4%BC%AA%E7%B1%BB/" rel="prev" title="CSS-CSS选择器：伪类">
+      <i class="fa fa-chevron-left"></i> CSS-CSS选择器：伪类
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/08/11/CSS-CSS%E5%B8%83%E5%B1%80/" rel="next" title="CSS-CSS布局">
+      CSS-CSS布局 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
